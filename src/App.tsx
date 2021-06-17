@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
-import AddStudent from './components/AddStudent';
-import StudentList from './components/StudentList';
+// import AddProject from './components/AddProject';
+import StudentList from './components/ProjectList';
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
       <header className="App-header">
         <StudentList/>
         <br/>
-        <AddStudent/>
+        {/* <AddProject/> */}
       </header>
     </div>
   );
