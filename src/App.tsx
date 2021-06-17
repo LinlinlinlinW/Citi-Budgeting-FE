@@ -1,7 +1,8 @@
 import React from 'react';
-import './App.css';
+//import './App.css';
 // import AddProject from './components/AddProject';
 import StudentList from './components/ProjectList';
+import Delete from './components/Delete';
 
 function App() {
   return (
@@ -11,6 +12,8 @@ function App() {
         <br/>
         {/* <AddProject/> */}
       </header>
+      <div>
+      </div>
     </div>
   );
 }

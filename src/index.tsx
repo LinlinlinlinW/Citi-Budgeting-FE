@@ -4,11 +4,17 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Delete from './components/Delete';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App />,
   </React.StrictMode>,
+  document.getElementById('root')
+);
+
+ReactDOM.render(
+    <Delete />,
   document.getElementById('root')
 );
 

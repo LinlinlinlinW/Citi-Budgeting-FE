@@ -13,6 +13,11 @@ class ProjectService {
     createProject(project: Project) {
         return axios.post(PROJECTS_API_URL, project)
     }
+
+    deleteOneProject(project_id: string, requst_id: string) {
+        // delete function
+        return axios.delete(project_id)
+    }
 }
 
 export default new ProjectService();
