@@ -35,7 +35,7 @@ const ProjectList: FunctionComponent<ProjectListProps> = () => {
                     <td>Start Date</td>
                     <td>End Date</td>
                     <td>Initial Budget</td>
-                    <td>Most Recent Request Amount</td>
+                    <td>Request Amount</td>
                     <td>Net Amount Remaining</td>
                 </tr>
             </thead>

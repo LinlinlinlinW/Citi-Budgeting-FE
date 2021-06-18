@@ -23,7 +23,7 @@ const ProjectGetEntry: FunctionComponent<ProjectGetItem> = () => {
     
 
     return <div>
-        <h1 className="text-center">List of Projects</h1>
+        <h1 className="text-center">Find project by ID</h1>
         <div>
             <input type="text"
                 value={project_id}

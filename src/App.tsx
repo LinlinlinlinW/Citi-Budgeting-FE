@@ -9,7 +9,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <ProjectUpdateEntry/>
+        <ProjectGetEntry/>
+        {/* <ProjectUpdateEntry/>*/}
         <br/>
         {/* <AddProject/> */}
       </header>

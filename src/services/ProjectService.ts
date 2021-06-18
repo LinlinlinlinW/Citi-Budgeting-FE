@@ -18,9 +18,14 @@ class ProjectService {
         return axios.get(PROJECT_API_URL_GET);
     }
 
-    updateOneProject(project_id: string, request_id: string) {
+    updateOneProject(project_id: string, request_id: string, request_reason: string, request_amount: string) {
         const PROJECT_API_URL_PUT = 'https://a6dxgre3d8.execute-api.us-east-1.amazonaws.com/prd/project_id/' + project_id + '/request_id/' + request_id;
-        return axios.put(PROJECT_API_URL_PUT);
+        
+        const content = {
+            "request_reason": request_reason,
+            "request_amount": request_amount
+        }
+        return axios.put(PROJECT_API_URL_PUT, content);
     }
 }
 

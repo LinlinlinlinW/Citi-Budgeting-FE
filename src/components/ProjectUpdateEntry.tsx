@@ -15,8 +15,8 @@ const ProjectUpdateEntry: FunctionComponent<ProjectUpdateItem> = () => {
     const [request_reason, setRequestReason] = useState("");
     const [request_amount, setRequestAmount] = useState("");
 
-    function getOneProject(): void {
-        ProjectService.updateOneProject(project_id, request_id).then((response: any) => {
+    function updateOneProject(): void {
+        ProjectService.updateOneProject(project_id, request_id, request_reason, request_amount).then((response: any) => {
             setOneProject(response.data);
             console.log(response.data)
         });
@@ -25,7 +25,7 @@ const ProjectUpdateEntry: FunctionComponent<ProjectUpdateItem> = () => {
     
 
     return <div>
-        <h1 className="text-center">List of Projects</h1>
+        <h1 className="text-center">Update entry</h1>
         <div>
             <input type="text"
                 value={project_id}
@@ -53,7 +53,7 @@ const ProjectUpdateEntry: FunctionComponent<ProjectUpdateItem> = () => {
                 style={{marginRight: "20px",  borderRadius: "5px"}}
             />
             
-            <button className="btn btn-primary" onClick={getOneProject}>
+            <button className="btn btn-primary" onClick={updateOneProject}>
                 Update Project
             </button>
         </div>
