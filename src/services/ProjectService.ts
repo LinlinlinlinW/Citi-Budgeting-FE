@@ -14,9 +14,10 @@ class ProjectService {
         return axios.post(PROJECTS_API_URL, project)
     }
 
-    deleteOneProject(project_id: string, requst_id: string) {
+    deleteOneProject(project_id: string, request_id: string) {
         // delete function
-        return axios.delete(project_id)
+        const PROJECT_API_URL_GET = 'https://a6dxgre3d8.execute-api.us-east-1.amazonaws.com/prd/project_id/' + project_id + '/request_id/' + request_id;
+        return axios.delete(PROJECT_API_URL_GET);
     }
 }
 

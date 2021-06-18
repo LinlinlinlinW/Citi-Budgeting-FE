@@ -10,6 +10,7 @@ function App() {
       <header className="App-header">
         <StudentList/>
         <br/>
+        <Delete />
         {/* <AddProject/> */}
       </header>
       <div>

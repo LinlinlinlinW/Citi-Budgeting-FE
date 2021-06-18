@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Delete from './components/Delete';
+
 
 ReactDOM.render(
   <React.StrictMode>
@@ -13,10 +13,7 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-ReactDOM.render(
-    <Delete />,
-  document.getElementById('root')
-);
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
