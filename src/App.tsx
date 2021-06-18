@@ -1,17 +1,19 @@
 import React from 'react';
-//import './App.css';
-// import AddProject from './components/AddProject';
-import StudentList from './components/ProjectList';
+
 import Delete from './components/Delete';
+import './App.css';
+import ProjectList from './components/ProjectList';
+import ProjectScan from './components/ProjectScan';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <StudentList/>
+        <ProjectScan/>
+        <br/>
+        <ProjectList/>
         <br/>
         <Delete />
-        {/* <AddProject/> */}
       </header>
       <div>
       </div>
