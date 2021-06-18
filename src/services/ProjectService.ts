@@ -3,7 +3,6 @@ import { Project } from '../types/types';
 
 
 const PROJECTS_API_URL = 'https://a6dxgre3d8.execute-api.us-east-1.amazonaws.com/prd/projects';
-
 class ProjectService {
     
     getProjects() {
@@ -14,6 +13,20 @@ class ProjectService {
         return axios.post(PROJECTS_API_URL, project)
     }
 
+    getOneProject(project_id: string, request_id: string) {
+        const PROJECT_API_URL_GET = 'https://a6dxgre3d8.execute-api.us-east-1.amazonaws.com/prd/project_id/' + project_id + '/request_id/' + request_id;
+        return axios.get(PROJECT_API_URL_GET);
+    }
+
+    updateOneProject(project_id: string, request_id: string, request_reason: string, request_amount: string) {
+        const PROJECT_API_URL_PUT = 'https://a6dxgre3d8.execute-api.us-east-1.amazonaws.com/prd/project_id/' + project_id + '/request_id/' + request_id;
+        
+        const content = {
+            "request_reason": request_reason,
+            "request_amount": request_amount
+        }
+        return axios.put(PROJECT_API_URL_PUT, content);
+    }
 
     deleteOneProject(project_id: string, request_id: string) {
         // delete function

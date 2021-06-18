@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
 
+import ProjectGetEntry from './components/ProjectGetEntry';
+import ProjectUpdateEntry from './components/ProjectUpdateEntry';
 import ProjectDelete from './components/ProjectDelete';
 import ProjectList from './components/ProjectList';
 import ProjectScan from './components/ProjectScan';
@@ -10,6 +12,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <ProjectGetEntry/>
+        {/* <ProjectUpdateEntry/>*/}
         <ProjectAdd/>
         <br/>
         <ProjectScan/>
