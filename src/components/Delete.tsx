@@ -20,14 +20,13 @@ function DeleteOneProject(): void {
 
   return (
     <div className="Delete">
+      <p>Delete a project</p>
       <label >
-        input project id:
         <input type="text" placeholder="enter a project id" value={project_id}
         style={{marginRight: "20px",  borderRadius: "5px"}}
         onChange ={e =>setProjectID(e.target.value)}></input>
       </label>
       <label >
-        input request id:
         <input type="text" placeholder="enter a request id" value={request_id}
         style={{marginRight: "20px",  borderRadius: "5px"}}
         onChange ={e =>setRequestID(e.target.value)}></input>
