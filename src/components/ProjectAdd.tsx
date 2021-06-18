@@ -41,7 +41,7 @@ const ProjectAdd: FunctionComponent<AddProjectProps> = () => {
 
     return (
         
-        <div className="container">
+        <div className="container" style={{marginLeft: "40px", marginRight: "40px",  borderRadius: "5px"}}>
             <h1 className="text-center">Add a Project</h1>
             <form>
                 <div className="form-group row">
@@ -102,7 +102,7 @@ const ProjectAdd: FunctionComponent<AddProjectProps> = () => {
                 </div>
                 <div className="form-group row">
                     <label htmlFor="request_reason" className="col-sm-2 col-form-label">
-                        Request Reason:
+                        Reason:
                     </label>
                     <div className="col-sm-10">
                         <input

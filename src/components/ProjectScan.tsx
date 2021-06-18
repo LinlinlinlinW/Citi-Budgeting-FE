@@ -19,30 +19,47 @@ const ProjectScan: FunctionComponent<ProjectUpdateItem> = () => {
         });
     }
 
-    
-    return <div style = {{marginLeft: "40px", marginRight: "40px", borderRadius: "5px"}}>
-        <h1 className="text-center">Scan Projects</h1>
-        <div>
-            <input type="text"
-                value={team_name}
-                placeholder="Enter a team name"
-                onChange={e => setTeamName(e.target.value)}
-                style={{marginLeft: "20px", marginRight: "20px", borderRadius: "5px"}}
-            />
-            
-            <input type="text"
-                value={net_amount_remaining}
-                placeholder="Enter a expected net amount remaining"
-                onChange={e => setNAR(e.target.value)}
-                style={{marginLeft: "20px", marginRight: "20px",  borderRadius: "5px"}}
-            />
-
-            <button className="btn btn-primary" onClick={scanProjectsOnClick}>
-                Scan Projects
-            </button>
-        </div>
-        <br></br>
-        <table style={{borderRadius: "5px"}} className="table table-striped table-dark table-bordered table-hover">
+    return <div className="container" style={{marginLeft: "40px", marginRight: "40px",  borderRadius: "5px"}} >
+            <h1 className="text-center">Scan Projects</h1>
+            <form>
+                <div className="form-group row">
+                    <label className="col-sm-2 col-form-label">
+                        Team Name:
+                    </label>
+                    <div className="col-sm-10">
+                        <input 
+                            type="text"
+                            value={team_name}
+                            className="form-control"
+                            placeholder="Enter a team name"
+                            onChange={e => setTeamName(e.target.value)}
+                            style={{marginLeft: "20px", marginRight: "20px", borderRadius: "5px"}}
+                        />
+                    </div>
+                </div>
+                <div className="form-group row">
+                    <label className="col-sm-2 col-form-label" >
+                        Net Amount Remaining:
+                    </label>
+                    <div className="col-sm-10">
+                        <input 
+                            type="text"
+                            value={net_amount_remaining}
+                            className="form-control"
+                            placeholder="Enter a expected net amount remaining"
+                            onChange={e => setNAR(e.target.value)}
+                            style={{marginLeft: "20px", marginRight: "20px",  borderRadius: "5px"}}
+                        />
+                    </div>
+                </div>
+                <div className="form-group">
+                    <button className="btn btn-primary" onClick={scanProjectsOnClick}>
+                        Scan Projects
+                    </button>
+                </div>
+            </form>
+            <br/>
+            <table style={{borderRadius: "5px"}} className="table table-striped table-dark table-bordered table-hover">
             <thead>
                 <tr>
                     <td>Project ID</td>
@@ -77,7 +94,8 @@ const ProjectScan: FunctionComponent<ProjectUpdateItem> = () => {
                 }
             </tbody>
         </table>
-    </div>;
+        </div>
+
 };
 
 export default ProjectScan;
