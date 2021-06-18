@@ -23,11 +23,13 @@ function DeleteOneProject(): void {
       <label >
         input project id:
         <input type="text" placeholder="project id" value={project_id}
+        style={{marginRight: "20px",  borderRadius: "5px"}}
         onChange ={e =>setProjectID(e.target.value)}></input>
       </label>
       <label >
         input request id:
         <input type="text" placeholder="request id" value={request_id}
+        style={{marginRight: "20px",  borderRadius: "5px"}}
         onChange ={e =>setRequestID(e.target.value)}></input>
       </label>
       <button className="btn btn-primary" onClick={DeleteOneProject}>
