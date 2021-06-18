@@ -14,7 +14,6 @@ const ProjectList: FunctionComponent<ProjectListProps> = () => {
     function getAllProjects(): void {
         ProjectService.getProjects().then((response: any) => {
             setAllProjects(response.data);
-            console.log(response.data)
         });
     }
 
@@ -22,7 +21,7 @@ const ProjectList: FunctionComponent<ProjectListProps> = () => {
         getAllProjects();
     }, [allProjects]);
 
-    return <div>
+    return <div style = {{marginLeft: "40px", marginRight: "40px", borderRadius: "5px"}}>
         <h1 className="text-center">List of Projects</h1>
         <table className="table table-striped table-dark table-bordered table-hover">
             <thead>

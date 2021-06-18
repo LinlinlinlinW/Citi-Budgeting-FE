@@ -6,7 +6,7 @@ export interface Project {
     request_reason: string;
     start_date: string;
     end_date: string;
-    initial_budget: Number;
-    most_recent_request_amt: Number;
-    net_amount_remaining: Number;
+    initial_budget?: number;
+    most_recent_request_amt?: number;
+    net_amount_remaining?: number;
 }
