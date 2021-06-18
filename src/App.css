@@ -28,6 +28,7 @@
 /* Style the links inside the navigation bar */
 .a {
   text-decoration: 'none';
+  color: 'white';
 }
 
 .topnav a.active {
