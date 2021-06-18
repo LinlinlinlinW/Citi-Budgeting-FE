@@ -1,4 +1,6 @@
 import React from 'react';
+
+import Delete from './components/Delete';
 import './App.css';
 import ProjectList from './components/ProjectList';
 import ProjectScan from './components/ProjectScan';
@@ -11,7 +13,10 @@ function App() {
         <br/>
         <ProjectList/>
         <br/>
+        <Delete />
       </header>
+      <div>
+      </div>
     </div>
   );
 }

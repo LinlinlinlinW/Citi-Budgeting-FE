@@ -14,6 +14,13 @@ class ProjectService {
         return axios.post(PROJECTS_API_URL, project)
     }
 
+
+    deleteOneProject(project_id: string, request_id: string) {
+        // delete function
+        const PROJECT_API_URL_GET = 'https://a6dxgre3d8.execute-api.us-east-1.amazonaws.com/prd/project_id/' + project_id + '/request_id/' + request_id;
+        return axios.delete(PROJECT_API_URL_GET);
+    }
+  
     scanProjects(team_name: string, net_amount_remaining: string) {
         const PROJECT_API_URL_SCAN = 'https://a6dxgre3d8.execute-api.us-east-1.amazonaws.com/prd/team/' + team_name + '/net_amount_remaining/' + net_amount_remaining;
         return axios.get(PROJECT_API_URL_SCAN);
