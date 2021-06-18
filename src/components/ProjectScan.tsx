@@ -34,7 +34,7 @@ const ProjectScan: FunctionComponent<ProjectUpdateItem> = () => {
                 value={net_amount_remaining}
                 placeholder="Enter a expected net amount remaining"
                 onChange={e => setNAR(e.target.value)}
-                style={{marginRight: "20px",  borderRadius: "5px"}}
+                style={{marginLeft: "20px", marginRight: "20px",  borderRadius: "5px"}}
             />
 
             <button className="btn btn-primary" onClick={scanProjectsOnClick}>

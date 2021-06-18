@@ -1,9 +1,6 @@
 import React, { FunctionComponent, useState } from 'react';
 import ProjectService from '../services/ProjectService';
 import { Project } from '../types/types';
-//import './App.css';
-// import AddProject from './components/AddProject';
-//import StudentList from './components/ProjectList';
 export interface ProjectDeleteItem {}
 
 const ProjectDeleteEntry: FunctionComponent<ProjectDeleteItem> = () => {
@@ -19,16 +16,16 @@ function DeleteOneProject(): void {
 }
 
   return (
-    <div className="Delete">
-      <p>Delete a project</p>
+    <div className="Delete" style = {{marginLeft: "40px", marginRight: "40px", borderRadius: "5px"}}>
+      <h1 className="text-center">Delete a Project</h1>
       <label >
         <input type="text" placeholder="enter a project id" value={project_id}
-        style={{marginRight: "20px",  borderRadius: "5px"}}
+        style={{marginLeft: "20px", marginRight: "20px",  borderRadius: "5px"}}
         onChange ={e =>setProjectID(e.target.value)}></input>
       </label>
       <label >
         <input type="text" placeholder="enter a request id" value={request_id}
-        style={{marginRight: "20px",  borderRadius: "5px"}}
+        style={{marginLeft:"20px", marginRight: "20px",  borderRadius: "5px"}}
         onChange ={e =>setRequestID(e.target.value)}></input>
       </label>
       <button className="btn btn-primary" onClick={DeleteOneProject}>
