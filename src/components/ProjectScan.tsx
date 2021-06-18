@@ -20,7 +20,7 @@ const ProjectScan: FunctionComponent<ProjectUpdateItem> = () => {
     }
 
     return <div className="container" style={{marginLeft: "40px", marginRight: "40px",  borderRadius: "5px"}} >
-            <h1 className="text-center">Scan Projects</h1>
+            <h1 className="text-center" style={{color: "#000", marginBottom: "20px"}}>Scan Projects</h1>
             <form>
                 <div className="form-group row">
                     <label className="col-sm-2 col-form-label">
@@ -59,7 +59,7 @@ const ProjectScan: FunctionComponent<ProjectUpdateItem> = () => {
                 </div>
             </form>
             <br/>
-            <table style={{borderRadius: "5px"}} className="table table-striped table-dark table-bordered table-hover">
+            <table style={{borderRadius: "5px"}} className="table table-striped table-light table-bordered table-hover">
             <thead>
                 <tr>
                     <td>Project ID</td>

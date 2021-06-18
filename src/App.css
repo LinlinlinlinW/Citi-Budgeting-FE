@@ -2,6 +2,45 @@
   text-align: center;
 }
 
+.topnav {
+  background-color: #5e35b1;
+  overflow: hidden;
+  position:relative;
+}
+
+.appName {
+  color: white;
+  font-size: 2.5em;
+  float: left;
+  margin-left: 20px;
+  padding: 10px 10px;
+}
+
+.tab {
+  color: white;
+  float: left;
+  margin-left: 20px;
+  text-align: center;
+  padding: 16.5px 20px;
+  font-size: 2em;
+}
+
+/* Style the links inside the navigation bar */
+.a {
+  text-decoration: 'none';
+}
+
+.topnav a.active {
+  margin-left: 50px;
+  text-decoration: 'none';
+}
+
+.topnav a:hover {
+  background-color:#d1c4e9;
+  color: #5e35b1;
+  text-decoration: 'none';
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -14,7 +53,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #d1c4e9;
   min-height: 100vh;
   display: flex;
   flex-direction: column;

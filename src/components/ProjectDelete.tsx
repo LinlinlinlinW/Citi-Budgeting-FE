@@ -16,7 +16,7 @@ function DeleteOneProject(): void {
 }
 
   return <div className="container" style={{marginLeft: "40px", marginRight: "40px",  borderRadius: "5px"}} >
-    <h1 className="text-center">Delete a Project</h1>
+    <h1 className="text-center" style={{color: "#000", marginBottom: "20px"}}>Delete a Project</h1>
     <form>
       <div className="form-group row">
         <label className="col-sm-2 col-form-label">
@@ -49,12 +49,13 @@ function DeleteOneProject(): void {
         </div>
       </div>
       <div className="form-group">
-        <button className="btn btn-primary" onClick={DeleteOneProject}>
+        <button className="btn btn-primary" onClick={DeleteOneProject} style={{backgroundColor: "#5e35b1"}}>
           Delete a Project
         </button>
       </div>
     </form>
   </div>
+
 
   }
 export default ProjectDeleteEntry;

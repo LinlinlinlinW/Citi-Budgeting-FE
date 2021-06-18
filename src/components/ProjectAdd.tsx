@@ -1,6 +1,6 @@
 import React, { FunctionComponent, useState } from "react";
 import ProjectService from "../services/ProjectService";
-
+import './../App.css';
 export interface AddProjectProps {}
 
 const ProjectAdd: FunctionComponent<AddProjectProps> = () => {
@@ -41,8 +41,8 @@ const ProjectAdd: FunctionComponent<AddProjectProps> = () => {
 
     return (
         
-        <div className="container" style={{marginLeft: "40px", marginRight: "40px",  borderRadius: "5px"}}>
-            <h1 className="text-center">Add a Project</h1>
+        <div className="container" style={{color: "#000"}}>
+            <h1 className="text-center" style={{marginTop: "20px"}}>Add a Project</h1>
             <form>
                 <div className="form-group row">
                     <label htmlFor="project_id" className="col-sm-2 col-form-label">
@@ -157,7 +157,7 @@ const ProjectAdd: FunctionComponent<AddProjectProps> = () => {
                     </div>
                 </div>
                 <div className="form-group">
-                    <button className="btn btn-primary" onClick={addProject}>
+                    <button className="btn btn-primary" onClick={addProject} style={{backgroundColor: "#5e35b1"}}>
                         Add Project
                     </button>
                 </div>

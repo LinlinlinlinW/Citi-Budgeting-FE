@@ -22,7 +22,7 @@ const ProjectGetEntry: FunctionComponent<ProjectGetItem> = () => {
 
 
     return <div className="container" style={{marginLeft: "40px", marginRight: "40px",  borderRadius: "5px"}} >
-    <h1 className="text-center">Find a project by IDs</h1>
+    <h1 className="text-center" style={{color: "#000", marginBottom: "20px"}}>Find a project by IDs</h1>
     <form>
       <div className="form-group row">
         <label className="col-sm-2 col-form-label">
@@ -55,13 +55,13 @@ const ProjectGetEntry: FunctionComponent<ProjectGetItem> = () => {
         </div>
       </div>
       <div className="form-group">
-        <button className="btn btn-primary" onClick={getOneProject}>
+        <button className="btn btn-primary" onClick={getOneProject} style={{backgroundColor: "#5e35b1"}}>
           Delete a Project
         </button>
       </div>
     </form>
     <br></br>
-        <table style={{borderRadius: "5px"}} className="table table-striped table-dark table-bordered table-hover">
+        <table style={{borderRadius: "5px"}} className="table table-striped table-light table-bordered table-hover">
             <thead>
                 <tr>
                     <td>Project ID</td>
