@@ -15,7 +15,7 @@ function DeleteOneProject(): void {
 });
 }
 
-  return <div className="container" style={{marginLeft: "40px", marginRight: "40px",  borderRadius: "5px"}} >
+  return <div className="container" style={{marginLeft: "40px", marginRight: "40px", marginTop: "40px", marginBottom: "40px",  borderRadius: "5px", color: "#000"}} >
     <h1 className="text-center" style={{color: "#000", marginBottom: "20px"}}>Delete a Project</h1>
     <form>
       <div className="form-group row">

@@ -21,7 +21,8 @@ const ProjectGetEntry: FunctionComponent<ProjectGetItem> = () => {
     }
 
 
-    return <div className="container" style={{marginLeft: "40px", marginRight: "40px",  borderRadius: "5px"}} >
+    return (
+    <div className="container" style={{marginLeft: "40px", marginRight: "40px", marginTop: "40px", marginBottom: "40px",  borderRadius: "5px", color: "#000"}} >
     <h1 className="text-center" style={{color: "#000", marginBottom: "20px"}}>Find a project by IDs</h1>
     <form>
       <div className="form-group row">
@@ -61,7 +62,7 @@ const ProjectGetEntry: FunctionComponent<ProjectGetItem> = () => {
       </div>
     </form>
     <br></br>
-        <table style={{borderRadius: "5px"}} className="table table-striped table-light table-bordered table-hover">
+        <table style={{marginLeft: "40px", marginRight: "40px", marginTop: "40px", marginBottom: "40px", color: "#000"}} className="table table-striped table-light table-bordered table-hover">
             <thead>
                 <tr>
                     <td>Project ID</td>
@@ -94,6 +95,7 @@ const ProjectGetEntry: FunctionComponent<ProjectGetItem> = () => {
             </tbody>
         </table>
   </div>
+)
 };
 
 export default ProjectGetEntry;
