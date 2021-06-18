@@ -23,7 +23,7 @@ const ProjectGetEntry: FunctionComponent<ProjectGetItem> = () => {
     
 
     return <div>
-        <h1 className="text-center">Find project by ID</h1>
+        <h1 className="text-center" style={{color: "#000", marginBottom: "20px"}}>Find project by ID</h1>
         <div>
             <input type="text"
                 value={project_id}
@@ -37,12 +37,12 @@ const ProjectGetEntry: FunctionComponent<ProjectGetItem> = () => {
                 onChange={e => setRequestID(e.target.value)}
                 style={{marginRight: "20px",  borderRadius: "5px"}}
             />
-            <button className="btn btn-primary" onClick={getOneProject}>
+            <button className="btn btn-primary" onClick={getOneProject} style={{backgroundColor: "#5e35b1"}}>
                 Get Project
             </button>
         </div>
         <br></br>
-        <table style={{borderRadius: "5px"}} className="table table-striped table-dark table-bordered table-hover">
+        <table style={{borderRadius: "5px"}} className="table table-striped table-light table-bordered table-hover">
             <thead>
                 <tr>
                     <td>Project ID</td>

@@ -21,7 +21,7 @@ const ProjectScan: FunctionComponent<ProjectUpdateItem> = () => {
 
     
     return <div style = {{marginLeft: "40px", marginRight: "40px", borderRadius: "5px"}}>
-        <h1 className="text-center">Scan Projects</h1>
+        <h1 className="text-center" style={{color: "#000", marginBottom: "20px"}}>Scan Projects</h1>
         <div>
             <input type="text"
                 value={team_name}
@@ -37,12 +37,12 @@ const ProjectScan: FunctionComponent<ProjectUpdateItem> = () => {
                 style={{marginLeft: "20px", marginRight: "20px",  borderRadius: "5px"}}
             />
 
-            <button className="btn btn-primary" onClick={scanProjectsOnClick}>
+            <button className="btn btn-primary" onClick={scanProjectsOnClick} style={{backgroundColor: "#5e35b1"}}>
                 Scan Projects
             </button>
         </div>
         <br></br>
-        <table style={{borderRadius: "5px"}} className="table table-striped table-dark table-bordered table-hover">
+        <table style={{borderRadius: "5px"}} className="table table-striped table-light table-bordered table-hover">
             <thead>
                 <tr>
                     <td>Project ID</td>

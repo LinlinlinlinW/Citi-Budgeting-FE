@@ -17,7 +17,7 @@ function DeleteOneProject(): void {
 
   return (
     <div className="Delete" style = {{marginLeft: "40px", marginRight: "40px", borderRadius: "5px"}}>
-      <h1 className="text-center">Delete a Project</h1>
+      <h1 className="text-center" style={{color: "#000", marginBottom: "20px"}}>Delete a Project</h1>
       <label >
         <input type="text" placeholder="enter a project id" value={project_id}
         style={{marginLeft: "20px", marginRight: "20px",  borderRadius: "5px"}}
@@ -28,7 +28,7 @@ function DeleteOneProject(): void {
         style={{marginLeft:"20px", marginRight: "20px",  borderRadius: "5px"}}
         onChange ={e =>setRequestID(e.target.value)}></input>
       </label>
-      <button className="btn btn-primary" onClick={DeleteOneProject}>
+      <button className="btn btn-primary" onClick={DeleteOneProject} style={{backgroundColor: "#5e35b1"}}>
                 Delete Project
        </button>
       
