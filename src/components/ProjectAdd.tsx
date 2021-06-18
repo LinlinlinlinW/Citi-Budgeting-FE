@@ -25,7 +25,7 @@ const ProjectAdd: FunctionComponent<AddProjectProps> = () => {
             end_date: end_date,
             initial_budget: initial_budget,
             net_amount_remaining: initial_budget,
-            most_recent_request_amt: 0
+            request_amount: 0
         };
         ProjectService.createProject(project).then(() => {
             setProjectID("");
