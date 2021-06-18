@@ -26,9 +26,9 @@ function App() {
         <Link to={'/delete'} className="tab" style={{textDecoration: 'none'}}>
           <div className="ind">Delete</div>
         </Link>
-        <Link to={'/chatbot'} className="tab" style={{textDecoration: 'none'}}>
-          <div className="ind">Chatbot</div>
-        </Link>
+        <div className="tab">
+          <a style={{textDecoration: 'none', color: '#fff'}} target="_blank" href="http://budget-chatbox.s3-website-us-east-1.amazonaws.com">Chatbot</a>
+        </div>
       </div>
       <header className="App-header">
         <Switch>
