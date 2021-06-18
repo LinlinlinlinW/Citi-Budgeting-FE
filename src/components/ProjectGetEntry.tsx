@@ -20,28 +20,47 @@ const ProjectGetEntry: FunctionComponent<ProjectGetItem> = () => {
         });
     }
 
-    
 
-    return <div>
-        <h1 className="text-center" style={{color: "#000", marginBottom: "20px"}}>Find project by ID</h1>
-        <div>
-            <input type="text"
+    return <div className="container" style={{marginLeft: "40px", marginRight: "40px",  borderRadius: "5px"}} >
+    <h1 className="text-center" style={{color: "#000", marginBottom: "20px"}}>Find a project by IDs</h1>
+    <form>
+      <div className="form-group row">
+        <label className="col-sm-2 col-form-label">
+          Project ID:
+        </label>
+        <div className="col-sm-10">
+            <input 
+                type="text"
                 value={project_id}
-                placeholder="Enter a project id"
+                className="form-control"
+                placeholder="Enter a project ID"
                 onChange={e => setProjectID(e.target.value)}
                 style={{marginLeft: "20px", marginRight: "20px", borderRadius: "5px"}}
             />
-            <input type="text"
-                value={request_id}
-                placeholder="Enter a request id"
-                onChange={e => setRequestID(e.target.value)}
-                style={{marginRight: "20px",  borderRadius: "5px"}}
-            />
-            <button className="btn btn-primary" onClick={getOneProject} style={{backgroundColor: "#5e35b1"}}>
-                Get Project
-            </button>
         </div>
-        <br></br>
+      </div>
+      <div className="form-group row">
+        <label className="col-sm-2 col-form-label">
+          Request ID:
+        </label>
+        <div className="col-sm-10">
+            <input 
+                type="text"
+                value={project_id}
+                className="form-control"
+                placeholder="Enter a request ID"
+                onChange={e => setRequestID(e.target.value)}
+                style={{marginLeft: "20px", marginRight: "20px", borderRadius: "5px"}}
+            />
+        </div>
+      </div>
+      <div className="form-group">
+        <button className="btn btn-primary" onClick={getOneProject} style={{backgroundColor: "#5e35b1"}}>
+          Delete a Project
+        </button>
+      </div>
+    </form>
+    <br></br>
         <table style={{borderRadius: "5px"}} className="table table-striped table-light table-bordered table-hover">
             <thead>
                 <tr>
@@ -74,7 +93,7 @@ const ProjectGetEntry: FunctionComponent<ProjectGetItem> = () => {
                     
             </tbody>
         </table>
-    </div>;
+  </div>
 };
 
 export default ProjectGetEntry;

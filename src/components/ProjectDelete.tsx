@@ -15,25 +15,47 @@ function DeleteOneProject(): void {
 });
 }
 
-  return (
-    <div className="Delete" style = {{marginLeft: "40px", marginRight: "40px", borderRadius: "5px"}}>
-      <h1 className="text-center" style={{color: "#000", marginBottom: "20px"}}>Delete a Project</h1>
-      <label >
-        <input type="text" placeholder="enter a project id" value={project_id}
-        style={{marginLeft: "20px", marginRight: "20px",  borderRadius: "5px"}}
-        onChange ={e =>setProjectID(e.target.value)}></input>
-      </label>
-      <label >
-        <input type="text" placeholder="enter a request id" value={request_id}
-        style={{marginLeft:"20px", marginRight: "20px",  borderRadius: "5px"}}
-        onChange ={e =>setRequestID(e.target.value)}></input>
-      </label>
-      <button className="btn btn-primary" onClick={DeleteOneProject} style={{backgroundColor: "#5e35b1"}}>
-                Delete Project
-       </button>
-      
-    </div>
-  );
+  return <div className="container" style={{marginLeft: "40px", marginRight: "40px",  borderRadius: "5px"}} >
+    <h1 className="text-center" style={{color: "#000", marginBottom: "20px"}}>Delete a Project</h1>
+    <form>
+      <div className="form-group row">
+        <label className="col-sm-2 col-form-label">
+          Project ID:
+        </label>
+        <div className="col-sm-10">
+            <input 
+                type="text"
+                value={project_id}
+                className="form-control"
+                placeholder="Enter a project ID"
+                onChange={e => setProjectID(e.target.value)}
+                style={{marginLeft: "20px", marginRight: "20px", borderRadius: "5px"}}
+            />
+        </div>
+      </div>
+      <div className="form-group row">
+        <label className="col-sm-2 col-form-label">
+          Request ID:
+        </label>
+        <div className="col-sm-10">
+            <input 
+                type="text"
+                value={request_id}
+                className="form-control"
+                placeholder="Enter a request ID"
+                onChange={e => setRequestID(e.target.value)}
+                style={{marginLeft: "20px", marginRight: "20px", borderRadius: "5px"}}
+            />
+        </div>
+      </div>
+      <div className="form-group">
+        <button className="btn btn-primary" onClick={DeleteOneProject} style={{backgroundColor: "#5e35b1"}}>
+          Delete a Project
+        </button>
+      </div>
+    </form>
+  </div>
+
 
   }
 export default ProjectDeleteEntry;

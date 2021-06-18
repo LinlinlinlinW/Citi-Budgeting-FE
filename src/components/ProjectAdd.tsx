@@ -102,7 +102,7 @@ const ProjectAdd: FunctionComponent<AddProjectProps> = () => {
                 </div>
                 <div className="form-group row">
                     <label htmlFor="request_reason" className="col-sm-2 col-form-label">
-                        Request Reason:
+                        Reason:
                     </label>
                     <div className="col-sm-10">
                         <input

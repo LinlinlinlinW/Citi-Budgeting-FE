@@ -21,9 +21,10 @@ const ProjectList: FunctionComponent<ProjectListProps> = () => {
         getAllProjects();
     }, [allProjects]);
 
-    return <div style = {{marginLeft: "40px", marginRight: "40px", borderRadius: "5px"}}>
+    return <div className="container" style={{marginLeft: "40px", marginRight: "40px",  borderRadius: "5px"}} >
         <h1 className="text-center" style={{color: '#000'}}>List of Projects</h1>
         <table className="table table-striped table-light table-bordered table-hover">
+
             <thead>
                 <tr>
                     <td>Project ID</td>
