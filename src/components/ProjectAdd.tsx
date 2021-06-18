@@ -3,7 +3,7 @@ import ProjectService from "../services/ProjectService";
 
 export interface AddProjectProps {}
 
-const AddProject: FunctionComponent<AddProjectProps> = () => {
+const ProjectAdd: FunctionComponent<AddProjectProps> = () => {
     const [project_id, setProjectID] = useState<string>("");
     const [request_id, setRequestID] = useState<string>("");
     const [team_manager, setTeamManager] = useState<string>("");
@@ -40,7 +40,9 @@ const AddProject: FunctionComponent<AddProjectProps> = () => {
     }
 
     return (
+        
         <div className="container">
+            <h1 className="text-center">Add a Project</h1>
             <form>
                 <div className="form-group row">
                     <label htmlFor="project_id" className="col-sm-2 col-form-label">
@@ -164,4 +166,4 @@ const AddProject: FunctionComponent<AddProjectProps> = () => {
     );
 };
 
-export default AddProject;
+export default ProjectAdd;
